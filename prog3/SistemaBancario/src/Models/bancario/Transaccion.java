@@ -1,6 +1,6 @@
 package Models.bancario;
 
-public class Transaccion 
+public abstract class Transaccion 
 {
  protected static float monto;
 

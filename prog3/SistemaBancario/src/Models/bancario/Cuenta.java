@@ -5,11 +5,11 @@ import java.util.Vector;
 public class Cuenta 
 {
 	private int nroCuenta;
-	  private Cliente cliente;
-	  private float saldo;
-	  private Vector<Transaccion> listaTrans= new Vector<Transaccion>();
+	private Cliente cliente;
+	private float saldo;
+	private Vector<Transaccion> listaTrans= new Vector<Transaccion>();
 	  
-	  public Cuenta(int n,Cliente c, float s) 
+	public Cuenta(int n,Cliente c, float s) 
 	  {
 		  nroCuenta = n;
 		  cliente = c;
