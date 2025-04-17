@@ -7,16 +7,20 @@ public class Cliente
   private String apellido;
   private String nombre;
   private int clienteNum;
+  private Banco banco;
+  
   private Vector<Cuenta> listaCuentas = new Vector<Cuenta>();
-  public Cliente(String n, String a, int num) 
+  
+  public Cliente(Banco banco) 
   {
-	  nombre = n;
-	  apellido = a;
-	  clienteNum += num;
+	  this.listaCuentas = new Vector<>();
+	  this.banco = banco;//RECONOCE AL BANCO
+	  banco.getListaClientes().add(this);//AGREGA AL CLIENTE CREADO EN LA LISTA DE CLIENTES DEL BANCO
   }
   public void agregarCuenta(Cuenta c) 
   {
-	  listaCuentas.add(c);
+	  this.listaCuentas.add(c);
+	  this.banco.getCuentas().add(c);//TENGO QUE AGREGAR ASI LA CUENTA DEL CLIENTE// SE VINCULA CON EL BANCO
   }
   //getters ///////////////////////////////////////////////
 public String getApellido() 
@@ -31,15 +35,8 @@ public int getClienteNum()
 {
 	return clienteNum;
 }
-public float getMontoCuenta() 
-{
-	float tot = 0;
-	for (Cuenta cuenta : listaCuentas) 
-	{
-		tot += cuenta.getSaldo();
-	};
-	return tot;
-}
+//SE FUE EL GETMONTOCUENTAS
+
 //setters /////////////////////////////////////////////////
 public void setApellido(String apellido) 
 {

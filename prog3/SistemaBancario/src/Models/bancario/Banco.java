@@ -6,16 +6,33 @@ public class Banco
 {
   private String nombre;
   private float disponible;
-  private Vector<Cliente> clientes = new Vector<Cliente>();
+  
+
+private Vector<Cuenta> cuentas = new Vector<>();
+private Vector<Cliente> clientes = new Vector<Cliente>();
 
 //getters
-public float getDisponible() 
+public float getDisponible() ////////////////////////////////////ESTO HIZO LA DIFERENCIA.
 {
-	for (Cliente cliente2 : clientes) 
+	for (Cuenta cuenta : cuentas) //VOY A DE CUENTA EN CUANTA OBTENIENDO SU SALDO.
 	{
-		disponible += cliente2.getMontoCuenta();
+		disponible += cuenta.getSaldo();
 	}
 	return disponible;
+}
+
+public Vector<Cuenta> getCuentas() 
+{
+	return cuentas;
+}
+
+public Vector<Cliente> getListaClientes()/////////////////////
+{
+	return clientes;
+}
+//setters
+public void setCuentas(Vector<Cuenta> cuentas) {
+	this.cuentas = cuentas;
 }
 //methods
 public Banco(String n) 

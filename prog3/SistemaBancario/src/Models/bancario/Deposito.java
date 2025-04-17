@@ -8,7 +8,7 @@ public class Deposito extends Transaccion
 	private Date fechaD;
 	public Deposito(float m)
 	{
-		super(monto += m);
+		super(m);
 		deposito = m;
 
     }

@@ -6,9 +6,10 @@ public class Extraccion extends Transaccion
 {
 	public float retiro;
 	private Date fechaE;
+	
 	public Extraccion(float m) 
 	{  
-		super(monto -= m);
+		super(m);
 		retiro = m;
 
     }
@@ -21,6 +22,6 @@ public class Extraccion extends Transaccion
 	@Override
     public String toString() 
 	{
-        return "Retiro de $" + retiro;
+        return "Retiro de $" + getMonto();
     }
 }

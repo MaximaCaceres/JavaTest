@@ -36,16 +36,8 @@ public class Cuenta
 		this.saldo = saldo;
 	}
 	//method
-	public void addTransaccion(Transaccion t) 
+	public void addTransaccion(Transaccion t) //CAMBIO A FORMA CORTA (CON UN TERNARIO)
 	{	
-		listaTrans.add(t);
-		if (t instanceof Deposito) 
-		{
-			t.getMonto();
-		}
-		else if (t instanceof Extraccion) 
-		{
-			t.getMonto();
-		}
+		this.saldo += (t instanceof Deposito) ? t.getMonto() : (-1) * t.getMonto();
 	}
 }
