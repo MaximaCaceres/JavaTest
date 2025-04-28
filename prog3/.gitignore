@@ -1,0 +1,47 @@
+Archivos de compilación
+bin/
+build/
+out/
+
+Archivos de configuración de IDEs (Eclipse, IntelliJ, NetBeans, VS Code)
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+Dependencias de Maven y Gradle
+.mvn/
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+dependency-reduced-pom.xml
+release.properties
+build/
+.gradle/
+gradle/
+
+Archivos de dependencias descargadas (evitar si usas Maven o Gradle)
+*.jar
+*.war
+*.ear
+
+Logs y archivos temporales
+logs/
+*.log
+*.tmp
+*.swp
+*.swo
+
+Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+Configuraciones de entorno y credenciales
+.env
+*.properties
+*.key
+*.pem
+*.crt
+*.pfx
+.metadata/
