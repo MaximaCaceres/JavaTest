@@ -9,7 +9,7 @@ public class Cliente
   private int clienteNum;
   private Banco banco;
   
-  private Vector<Cuenta> listaCuentas = new Vector<Cuenta>();
+  private Vector<Cuenta> listaCuentas;
   
   public Cliente(Banco banco) 
   {
