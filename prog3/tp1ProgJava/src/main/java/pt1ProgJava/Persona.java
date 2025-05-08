@@ -25,6 +25,10 @@ public abstract class Persona implements Comparator<Persona>, Comparable<Persona
 		return this.nombre;
 	}
 
+	public int getEdad() {
+		return edad;
+	}
+
 	public String getApellido() {
 		return this.apellido;
 	}
@@ -41,4 +45,5 @@ public abstract class Persona implements Comparator<Persona>, Comparable<Persona
 		else 
 			return p1.getApellido().compareTo(p2.getApellido());
 	}
+
 }

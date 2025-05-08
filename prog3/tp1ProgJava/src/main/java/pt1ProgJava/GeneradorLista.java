@@ -7,7 +7,7 @@ import com.github.javafaker.Faker;
 
 public class GeneradorLista {
 	Faker faker;
-	private static int limitAlumnos=25;
+	private static int limitAlumnos=50;
 	private static int limitProfesor=2;
 	private static String[] profesiones = {"Ing. en Sistemas","Lic. en Sistemas","Desarrollador"};
 	

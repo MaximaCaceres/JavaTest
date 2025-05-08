@@ -21,9 +21,14 @@ public class Profesor extends Persona {
 		return legajo;
 	}
 	
-	@Override
+	/*@Override
 	public int compareTo(Persona p) {
 		Profesor paramProf = (Profesor) p;
 		return paramProf.legajo - this.legajo;
+	}*/
+	
+	@Override 
+	public String toString() {
+		return "LE: "+ this.legajo + "-" + this.getApellido() + ", " + this.getNombre() + "-" + this.titulo+ "- Edad: " + this.getEdad();
 	}
 }

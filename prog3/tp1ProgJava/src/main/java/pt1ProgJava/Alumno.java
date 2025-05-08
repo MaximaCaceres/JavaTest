@@ -38,4 +38,7 @@ public class Alumno extends Persona{
 	public double getPromedio() {
 		return promedio;
 	}
+	public String toString() {
+		return "Nombre y apellido: "+nombre + " "+ apellido + " Edad: " + edad + " MateriasAprobadas: " + materiasAprobadas + " Promedio: " + promedio;
+	}
 }
