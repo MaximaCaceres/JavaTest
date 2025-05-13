@@ -26,7 +26,7 @@ public class Principal {
 			System.out.println(a);
 		}
 		
-		//punto B
+		//punto B //prueba de algo
 		System.out.println("----------------------------");
 		System.out.println("Punto B: ");
 		System.out.println("----------------------------");
