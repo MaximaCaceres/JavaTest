@@ -36,7 +36,7 @@ public class Principal {
 			System.out.println(p);
 		}
 		
-		//punto C
+		//punto C //segunda prueba de algo
 		System.out.println("----------------------------");
 		System.out.println("Punto C: ");
 		System.out.println("----------------------------");
